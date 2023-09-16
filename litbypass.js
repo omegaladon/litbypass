@@ -17,4 +17,20 @@
         element.classList.remove('blur');
     });
 
+    const aplusDialogs = document.querySelectorAll('.a-plus-dialog, .a-plus');
+    aplusDialogs.forEach((dialog) => {
+        dialog.remove();
+    });
+
+    const blurs = document.querySelectorAll('.blurred-text, .btn-blurred');
+    blurs.forEach((element) => {
+        element.classList.remove('blurred-text');
+        element.classList.remove('btn-blurred');
+    });
+
+    const paywallButtons = document.querySelectorAll('.analysis-text-dialog');
+    paywallButtons.forEach((button) => {
+        button.remove();
+    })
+
 })();
